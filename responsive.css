@@ -1,0 +1,304 @@
+
+/* media query.................. */
+
+    /* Styles for mobile screens */
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --main-bg-color: -webkit-linear-gradient(
+          45deg,
+          #4549b6,
+          #1BFFFF,
+          #575ab1d5,
+          #1BFFFF,
+          #3d40a4d4
+        );
+    }
+    /* ........main scetion................. */
+    #myVideo {
+        position: absolute; /* Allow video to stay in the background */
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* Full viewport height */
+        object-fit: cover; /* Ensures the video covers the entire area */
+        z-index: -1; /* Puts the video behind the content */
+    }
+  nav {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: auto;
+    text-shadow: 5px 2px 4px rgb(13, 13, 13);
+  }
+  .right-nav {
+    display: none;
+  }
+  .center-nav{
+    display: flex;
+    justify-content: center;
+  }
+  .hero-page p {
+    font-size: 15px;
+    padding: 20px;
+  }
+  /* .media-700 {
+    color: rgb(36, 123, 36);
+  } */
+  .hero-page h1 {
+    font-size: 3rem;
+    color: #11c4b8;
+    margin-top: 150px;
+    text-shadow: 5px 2px 4px rgb(6, 6, 6);  
+    text-align: center;
+  }
+  /* ........next-page-1................. */
+  .cars-section {
+    overflow-x: scroll;
+  }
+  #next-page-1 h3{
+    color: #11c4b8;
+    text-shadow: 5px 2px 4px rgb(6, 6, 6);  
+    text-align: center;
+    font-size: 40px !important ;
+  }
+  .car-img-container{
+    border: 5px solid #11c4b8;
+  }
+
+    /* ........next-page-2................. */
+  .page2-left h2 {
+    font-size: 50px !important;
+    color: #11c4b8;
+    text-align: center;
+    text-shadow: 5px 2px 4px rgb(6, 6, 6);
+  }
+  #next-page-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page2-right img {
+    width: 580px;
+    object-fit: cover;
+    /* min-height: 100vh; */
+    margin-top: 20px;
+  }
+    /* ........next-page-3................. */
+
+  #next-page-3{
+    /* margin: 10px; */
+    padding: 10px;
+    width: 100%;
+    color: aliceblue;
+  }
+  #next-page-3 h2{
+    font-size: 40px !important;
+    color: #11c4b8;
+    text-align: center;
+    text-shadow: 5px 2px 4px rgb(6, 6, 6);
+  }
+  .car-card-container{
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 5px;
+  }
+  .cars-card{
+    height: 500px;
+    width: 300px;
+  }
+  /* ........next-page-4................. */
+
+  #next-page-4 h2 {
+    font-size: 2rem;
+    margin-right: 10px;
+    text-align: center;
+  }
+  #next-page-4{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+   .headingofpage4{
+    color: #11c4b8;
+    margin-bottom: 20px;
+   }
+  .carousel-container {
+    width: 100%; /* Make the container take up full screen width */
+    border: none; /* Optionally remove the border */
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100vw * 6); /* Total width for all cards in terms of viewport width */
+  }
+
+  .card {
+    height: 300px; /* Adjust card height for mobile */
+    width: 100vw; /* Each card takes up the full viewport width */
+    margin: 0; /* Remove the margins */
+    border: none; /* Optionally remove the border */
+    border-radius: 0; /* Optionally remove border radius */
+    
+  }
+
+  .description {
+    padding: 5px;
+    font-size: 0.8rem; /* Adjust text size for mobile */
+  }
+  /* ..........footer.............. */
+
+
+.footer-body {
+    display: flex;
+    flex-direction: column; /* Stack the sections vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.footer-body div {
+    margin-bottom: 20px; /* Add space between the sections */
+}
+
+.footer-body ul {
+    padding: 0;
+}
+
+.footer-body ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.footer-body ul li a {
+    font-size: 14px; /* Reduce the font size for smaller screens */
+}
+
+.right-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.s-icon {
+    width: 30px;
+    height: 30px; /* Resize the social icons */
+    margin: 0 10px;
+}
+
+#f-text {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+}
+
+
+/* hidden vehicle container............ */
+
+.container {
+    display: none;
+    position: absolute;
+    background: var(--main-bg-color);
+    border: 3px solid #ccc;
+    padding: 20px;
+    top: 40px; /* Position it just below the navbar */
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px; 
+    z-index: 5;
+  }
+
+  .vihicle-item-container{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 20px; */
+    color: white;
+  }
+
+  .vehicle-item {
+    width: 250px;
+    height: 200px;
+    /* object-fit: contain; */
+    /* border: 1px solid black; */
+    margin: 0 50px;
+    /* text-align: center; */
+  }
+  .vehicle-item img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .sec-2{
+    margin-top: 50px;
+  }
+  .vehicle-text{
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    color: white;
+    text-shadow: 5px 2px 4px rgb(13, 13, 13);
+    /* text-align: center; */
+    margin-top: 50px;
+  }
+  /* Show the container when hovering over the Vehicles item */
+/* .center-nav#vehicles:hover + .container,
+.container:hover {
+  display: block;
+} */
+
+/* Investors-hidden-container.............. */
+#Investors-hidden-container{
+  display: none;
+  background: var(--main-bg-color);
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  top: 40px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+}
+.investor-list-card{
+    padding: 50px;
+}
+.investor-list-card p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    text-shadow: 5px 2px 4px rgb(13, 13, 13);
+}
+
+
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+    #next-page-2 {
+      flex-direction: column; /* Stacks the content vertically */
+      align-items: center; /* Centers the items */
+    }
+  
+    #next-page-2 h2 {
+      font-size: 4rem; /* Reduce the heading size */
+      text-align: center;
+      margin: 20px 0;
+    }
+  
+    .page2-right img {
+      width: 100%; /* Image takes the full width */
+      max-width: 600px; /* Max width for smaller screens */
+      height: auto; /* Maintains aspect ratio */
+    }
+  }
+  
+  /* Media Query for very small screens */
+  @media only screen and (max-width: 480px) {
+    #next-page-2 h2 {
+      font-size: 2.5rem; /* Further reduce the heading size */
+    }
+  
+    .page2-right img {
+      max-width: 100%; /* Full width for very small screens */
+    }
+  }

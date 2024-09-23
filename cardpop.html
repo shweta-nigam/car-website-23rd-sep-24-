@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slide Animation</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+   <style>
+    /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.card-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+
+.card-front {
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.card-back {
+  background-color: #ff6347;
+  color: white;
+  z-index: 1;
+  transform: translateY(100%); /* Initially, hide the back card below the front card */
+}
+
+/* Hover effect: Slide the back card from the bottom */
+.card:hover .card-back {
+  transform: translateY(0); /* Move the back card into view */
+}
+
+.card:hover .card-front {
+  transform: translateY(-100%); /* Move the front card out of view */
+}
+
+   </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-front">
+        <h2>Front Card</h2>
+        <p>This is the front of the card.</p>
+      </div>
+      <div class="card-back">
+        <h2>Back Card</h2>
+        <p>This is the second card that pops up from the bottom!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

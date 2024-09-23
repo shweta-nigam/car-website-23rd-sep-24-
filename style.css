@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-bg-color: -webkit-linear-gradient(
+    45deg,
+    #97bc62,
+    #3c873ede,
+    #97bc62,
+    #3c873ede,
+    #97bc62
+  );
+}
+body {
+  font-family: "Poppins", system-ui;
+  /* overflow-x: hidden; */
+  width: 100%;
+  background-color: aliceblue;
+}
+
+/*............. main */
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+} */
+#myVideo {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+nav {
+  z-index: 1;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background: var(--main-bg-color);
+}
+#logo {
+  width: 100px;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+.fb {
+  width: 30px;
+}
+.insta {
+  width: 45px;
+}
+.linkedin {
+  width: 40px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  font-weight: bold;
+}
+nav ul li {
+  list-style: none;
+  padding: 15px;
+}
+nav ul {
+  display: flex;
+}
+.left-nav {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 25px;
+  text-shadow: 5px 2px 4px #113f12de;
+}
+.right-nav {
+  padding: 10px;
+}
+.fb {
+  margin-right: 10px;
+  margin-bottom: 19px;
+}
+.linkedin {
+  margin-right: 5px;
+  margin-bottom: 14px;
+}
+.insta {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.right-nav img:hover {   
+    animation: spin 2s ease-in-out infinite; /* apply the animation */  
+  }
+/* hero page......... */
+.hero-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.hero-page h1 {
+  font-size: 3rem;
+  color: #1aa41c;
+  text-shadow: 5px 2px  rgb(242, 236, 236);
+}
+.hero-page p{
+  text-shadow: 2px 2px rgb(24, 93, 152);
+}
+.hero-btn {
+  margin-top: 35px;
+}
+
+/* next-page-1........................ */
+#next-page-1 {
+  min-height: 140vh;
+  width: 100%;
+  position: relative;
+  background-color: aliceblue;
+  /* margin-top: 50px; */
+}
+.cars-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.heading3 {
+  font-size: 2rem;
+  color: #2c5f2d;
+  padding: 50px;
+}
+.car-img-container {
+  height: 250px;
+  width: 300px;
+  border: 5px solid #97bc62;
+  margin: 30px;
+  border-radius: 5px;
+}
+.img {
+  width: 280px;
+  /* height: 250px; */
+  margin-top: 20px;
+  margin-left: 15px;
+}
+h6 {
+  font-size: larger;
+}
+.car-img-5 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.car-product-1 img {
+  margin-top: 0;
+}
+
+@keyframes mynav {
+    from {transform: translateY(1px);}
+    to {transform: translateY(-10px);}
+}
+/* .cars-section img:hover {   
+    animation: mynav 2s ease-in-out infinite; 
+  } */
+.cars-section .car-img-container:hover {   
+    animation: mynav 2s ease-in-out infinite;
+    animation-fill-mode: both; 
+  }
+ 
+
+
+/* next-page-2.......... */
+#next-page-2 {
+  min-height: 110vh;
+  width: 100%;
+  background-color: aliceblue;
+  position: relative;
+  display: flex;
+  /* margin-left: 20px; */
+}
+#next-page-2 h2 {
+  font-size: 6rem;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 10px;
+}
+#next-page-2 p {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.page2-right img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    object-fit: contain;
+  }
+
+
+/*  next-page-3............*/
+#next-page-3 {
+  height: auto;
+  width: 100%;
+  background-color: aliceblue;
+  position: relative;
+  /* padding: 50px; */
+  /* overflow: hidden; */
+}
+.car-card-container {
+  height: auto;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+#next-page-3 h2 {
+  font-size: 2rem;
+  color: #2c5f2d;
+}
+.left-card {
+  background: url(img,vid/car1.jpg) no-repeat;
+  z-index: 2;
+}
+.right-card {
+  background: url(img,vid/car2.jpg) no-repeat;
+  z-index: 2;
+}
+.cars-card {
+  background-size: cover;
+  height: 600px;
+  width: 400px;
+  padding: 20px;
+  margin: 10px;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+}
+
+.cars-card .btn {
+  margin-top: 10px;
+}
+.left-card .btn {
+  margin-top: 28px;
+}
+/*  next-page-4......................*/
+
+#next-page-4 * {
+  box-sizing: border-box;
+}
+#next-page-4 {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: aliceblue;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* display: none; */
+}
+#next-page-4 h2{
+    font-size: 3.5rem;
+    /* padding: 10px; */
+    margin-right: 50px;
+}
+.carousel-container {
+  width: 970px; /* Width of three cards */
+  overflow: hidden;
+  border: 5px solid green;
+  border-radius: 5px;
+  
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(
+    300px * 6 + 20px * 6
+  ); /* Total width for all cards including margin */
+}
+
+.card {
+  height: 500px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px;
+  position: relative;
+  border: 5px solid green;
+  border-radius: 5px;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* footer................... */
+
+footer {
+  background: var(--main-bg-color);
+  position: relative;
+  color: white;
+  min-height: 130px;
+  /* padding: 20px; */
+  width: 100%;
+  margin: 0;
+  /* margin-left: 20px; */
+}
+.footer-body {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+.right-footer {
+  margin-right: -8%;
+}
+
+footer ul li a:hover {
+  font-weight: bold;
+}
+#f-text {
+  padding: 10px;
+}
+@keyframes spin {  
+    from { transform: rotate(0deg); }  
+    to { transform: rotate(360deg); }  
+  }  
+  
+  .right-footer img:hover {   
+    animation: spin 2s ease-in-out infinite; /* apply the animation */  
+  }
+
+  

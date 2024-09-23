@@ -1,0 +1,52 @@
+
+  /* :root {
+    --main-bg-color: linear-gradient(180deg, #2C5F2D, #97BC62);
+  } */
+.btn{
+border: 2px solid #184918;
+padding: 10px;
+border-radius: 10px;
+background: var(--main-bg-color);
+/* background: -webkit-linear-gradient(45deg,#97BC62, #3c873ede, #97BC62,#3c873ede, #97BC62); */
+color: rgb(242, 237, 237);
+font-weight: bold;
+box-shadow: 3px 5px 5px 1px rgb(49, 55, 58);
+text-shadow: 2px 2px 4px rgb(8, 7, 7);
+/* transition: margin-right 2s ease-in-out; */
+}
+.btn:hover{
+  box-shadow: 3px 3px 3px 2px rgb(221, 231, 236);
+
+  animation: mynav 2s ease-in-out infinite;
+  animation-fill-mode: both; 
+}
+.text-ct{
+    text-align: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+.text-bold-card{
+  color: white;
+  font-size: 23px;
+
+}
+.text-card{
+  color: white;
+  text-align: justify;
+  /* margin-top: 50px; */
+  padding: 10px;
+}
+
+.hr{
+  border: 1px solid #184918;
+  margin: 10px 20px 30px 90px;
+  overflow-x: hidden;
+}
+.car-dis{
+  margin-bottom: 10px;
+}
+.heading2{
+  text-shadow: 2px 2px 2px rgb(8, 7, 7);
+  font-size: 2rem;
+  color: #189818;
+}
